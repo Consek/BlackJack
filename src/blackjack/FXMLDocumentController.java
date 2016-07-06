@@ -70,6 +70,10 @@ public class FXMLDocumentController implements Initializable {
         while(cSum<17){
             cTableAdd(cardDeck.draw());
         }
+        if(cSum>21){
+            win();
+        }
+        
         if(cSum<uSum){
             win();
         }else{
